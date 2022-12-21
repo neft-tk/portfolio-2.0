@@ -1,11 +1,11 @@
-import "./style.css"
+import "./style.css";
+import Nav from "./components/Nav";
 
 function App() {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline">Hello</h1>
-    </div>
-
+    <>
+      <Nav/>
+    </>
   );
 }
 
