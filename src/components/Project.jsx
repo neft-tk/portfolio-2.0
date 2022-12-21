@@ -1,13 +1,24 @@
-import React from 'react'
+import React from "react";
 
-export default function Project({ repoLink, deployedLink }) {
-
-    return (
-        <>
-      <div>Project</div>
-      <h1>ProjectName</h1>
-      <a href={repoLink} target="_blank">Repo</a>
-      <a href={deployedLink} target="_blank">Deployed Site</a>
-      </>
-    )
+export default function Project({ projectName, repoLink, deployedLink }) {
+  return (
+    <>
+    <div>
+      <a
+        href={deployedLink}
+        target="_blank"
+        className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+      >
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          {projectName}
+        </h5>
+        <p class="font-normal text-gray-700 dark:text-gray-400">
+        <a href={repoLink} target="_blank">
+          Repo Link
+        </a>
+        </p>
+      </a>
+      </div>
+    </>
+  );
 }
