@@ -8,7 +8,11 @@
     }
 
     .icon {
-        @apply mx-6
+        @apply mx-6;
+    }
+
+    .footer {
+        @apply absolute inset-x-1/2 bottom-5 items-center flex flex-row justify-center;
     }
 }
 
