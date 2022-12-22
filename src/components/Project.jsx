@@ -1,21 +1,22 @@
 import React from "react";
 
-export default function Project({ projectName, repoLink, deployedLink }) {
+export default function Project({ projectName, repoLink, deployedLink, projectDescription }) {
   return (
     <>
     <div>
       <a
         href={deployedLink}
         target="_blank"
-        className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+        className="project-card"
       >
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+        <h5 class="mb-4 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
           {projectName}
         </h5>
-        <p class="font-normal text-gray-700 dark:text-gray-400">
         <a href={repoLink} target="_blank">
-          Repo Link
+          <span className="border-2 border-gray-500 p-1 rounded ">GitHub Repo</span>
         </a>
+        <p className="my-4 font-normal text-gray-700 dark:text-gray-400">
+            {projectDescription}
         </p>
       </a>
       </div>
