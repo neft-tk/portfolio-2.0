@@ -14,6 +14,10 @@
     .footer {
         @apply absolute inset-x-1/2 bottom-5 items-center flex flex-row justify-center;
     }
+
+    .education-card {
+        @apply block flex flex-row max-w-md p-6 m-4 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-200 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700;
+    }
 }
 
 html {
@@ -30,6 +34,11 @@ body {
 
 .icon {
     max-width: 5vh;
+    max-height: 5vh;
+}
+
+.school-icon {
+    max-width: 7vh;
     max-height: 5vh;
 }
 
