@@ -28,7 +28,6 @@
 }
 
 html {
-    background-image: linear-gradient(var(--dawn));
     min-height: 100vh;
     min-width: 100vw;
     max-height: 100vh;
@@ -37,6 +36,22 @@ html {
 
 body {
     background-color: transparent;
+}
+
+.background-dawn {
+    background-image: linear-gradient(var(--dawn));
+}
+
+.background-day {
+    background-image: linear-gradient(var(--day));
+}
+
+.background-evening {
+    background-image: linear-gradient(var(--evening));
+}
+
+.background-night {
+    background-image: linear-gradient(var(--night));
 }
 
 .icon {

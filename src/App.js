@@ -14,12 +14,35 @@ import Contact from "./components/pages/Contact";
 import moment from 'moment'
 
 function App() {
-  const [dayTime, setDayTime] = useState(moment().format("LT"))
+  const [dayTime, setDayTime] = useState(moment().format("HH:mm:ss"))
+  const [backgroundClass, setBackgroundClass] = useState('background-day')
+
+  const handleBackgroundChange = (dayTime) => {
+    let dayTimeSplit = dayTime.split(":")
+    
+    let hourDayTime = dayTimeSplit[0]
+    console.log(hourDayTime);
+
+    if((hourDayTime >= 6) && (hourDayTime < 9)) {
+      setBackgroundClass('background-dawn')
+      console.log(backgroundClass);
+    } else if((hourDayTime >= 9) && (hourDayTime < 18)) {
+      setBackgroundClass('background-day')
+      console.log(backgroundClass);
+    } else if ((hourDayTime >= 18) && (hourDayTime < 21)) {
+      setBackgroundClass('background-evening')
+      console.log(backgroundClass);
+    } else {
+      setBackgroundClass('background-night')
+      console.log(backgroundClass);
+    }
+
+    const htmlId = document.getElementById("html")
+    htmlId.setAttribute("class", backgroundClass)
+  }
 
   useEffect(() => {
-      console.log(dayTime);    
-      setDayTime(moment().format("LT"))
-      console.log(dayTime); 
+      handleBackgroundChange(dayTime)
   }, []);
 
   return (
