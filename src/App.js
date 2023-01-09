@@ -36,13 +36,12 @@ function App() {
       setBackgroundClass('background-night')
       console.log(backgroundClass);
     }
-
-    const htmlId = document.getElementById("html")
-    htmlId.setAttribute("class", backgroundClass)
   }
 
   useEffect(() => {
       handleBackgroundChange(dayTime)
+      const htmlId = document.getElementById("html")
+      htmlId.setAttribute("class", backgroundClass)
   }, []);
 
   return (
