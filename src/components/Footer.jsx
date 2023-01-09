@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <>
     <div className="footer">
-    <a href = "mailto: ebussman@gmail.com">Email Me!</a>
+    <a href ="mailto: ebussman@gmail.com">Email Me!</a>
       <a href="https://github.com/neft-tk" target="blank">
         <img src={Github} alt="github" className="icon" />
       </a>

@@ -1,3 +1,10 @@
+:root {
+    --dawn: to bottom, #56a5ff, #bd5427, #ff6700, #ff8100, #ffa700, #a7c492;
+    --day: to bottom, #568CD8, #82B2E8, #FFF8EF, #F4E8D4, #E9D6CA, #a7c492;
+    --evening: to bottom, #293462, #F24C4C, #EC9B3B, #F7D716;
+    --night: to bottom, #040404, #27183F, #370648, #C4595F, #F89C69, #FFF9CB;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -21,7 +28,7 @@
 }
 
 html {
-    background-image: linear-gradient(to bottom right, cornflowerblue,silver);
+    background-image: linear-gradient(var(--dawn));
     min-height: 100vh;
     min-width: 100vw;
     max-height: 100vh;

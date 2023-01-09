@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from 'react';
 import "./style.css";
 import Nav from "./components/Nav";
 import {
@@ -10,8 +11,17 @@ import Footer from "./components/Footer";
 import Education from "./components/pages/Education";
 import Work from "./components/pages/Work";
 import Contact from "./components/pages/Contact";
+import moment from 'moment'
 
 function App() {
+  const [dayTime, setDayTime] = useState(moment().format("LT"))
+
+  useEffect(() => {
+      console.log(dayTime);    
+      setDayTime(moment().format("LT"))
+      console.log(dayTime); 
+  }, []);
+
   return (
     <>
     <Router>
