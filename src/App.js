@@ -15,33 +15,37 @@ import moment from 'moment'
 
 function App() {
   const [dayTime, setDayTime] = useState(moment().format("HH:mm:ss"))
-  const [backgroundClass, setBackgroundClass] = useState('background-day')
+  const [backgroundClass, setBackgroundClass] = useState("")
 
   const handleBackgroundChange = (dayTime) => {
     let dayTimeSplit = dayTime.split(":")
     
     let hourDayTime = dayTimeSplit[0]
-    console.log(hourDayTime);
+
+    const backgroundDawn = "background-dawn"
+    const backgroundDay = "background-day"
+    const backgroundEvening = "background-evening"
+    const backgroundNight = "background-night"
+    const htmlId = document.getElementById("html")
 
     if((hourDayTime >= 6) && (hourDayTime < 9)) {
-      setBackgroundClass('background-dawn')
-      console.log(backgroundClass);
+      setBackgroundClass(backgroundDawn)
+      htmlId.setAttribute("class", backgroundDawn)
     } else if((hourDayTime >= 9) && (hourDayTime < 18)) {
-      setBackgroundClass('background-day')
-      console.log(backgroundClass);
+      setBackgroundClass("background-day")
+      htmlId.setAttribute("class", backgroundDay)
     } else if ((hourDayTime >= 18) && (hourDayTime < 21)) {
-      setBackgroundClass('background-evening')
-      console.log(backgroundClass);
+      setBackgroundClass(backgroundEvening)
+      htmlId.setAttribute("class", backgroundEvening)
     } else {
-      setBackgroundClass('background-night')
-      console.log(backgroundClass);
+      setBackgroundClass(backgroundNight)
+      htmlId.setAttribute("class", backgroundNight)
     }
+
   }
 
   useEffect(() => {
       handleBackgroundChange(dayTime)
-      const htmlId = document.getElementById("html")
-      htmlId.setAttribute("class", backgroundClass)
   }, []);
 
   return (

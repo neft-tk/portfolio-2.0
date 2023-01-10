@@ -11,7 +11,7 @@
 
 @layer components {
     .project-card {
-        @apply block max-w-sm p-6 m-4 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-200 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700;
+        @apply block min-w-0 p-6 m-4 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-200 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700;
     }
 
     .icon {
@@ -19,7 +19,7 @@
     }
 
     .footer {
-        @apply inset-x-1/2 bottom-5 items-center flex flex-row justify-center;
+        @apply fixed inset-x-1/2 bottom-5 items-center flex flex-row justify-center;
     }
 
     .education-card {
