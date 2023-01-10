@@ -19,15 +19,15 @@
     }
 
     .footer {
-        @apply fixed inset-x-1/2 bottom-5 items-center flex flex-row justify-center;
+        @apply absolute md:fixed inset-x-1/2 md:bottom-5 items-center flex flex-row justify-center;
     }
-
+    
     .education-card {
         @apply block flex flex-row max-w-md p-6 m-4 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-200 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700;
     }
 
     .work-list {
-        @apply items-center flex flex-col justify-between m-4 lg:flex-row
+        @apply items-center flex flex-col justify-between mx-4 my-10 lg:flex-row
     }
 }
 
@@ -40,6 +40,10 @@ html {
 
 body {
     background-color: transparent;
+}
+
+p{
+    font-size: calc(6px+2vmin);
 }
 
 .background-dawn {

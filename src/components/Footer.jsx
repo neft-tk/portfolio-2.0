@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <>
       <div className="footer">
-        <div className="flex flex-row sticky">
+        <div className="flex flex-row">
           <a href="mailto: ebussman@gmail.com">Email Me!</a>
           <a href="https://github.com/neft-tk" target="blank">
             <img src={Github} alt="github" className="icon" />

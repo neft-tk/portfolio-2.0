@@ -52,7 +52,7 @@ export default function Work() {
           </ul>
           </a>
         </div>
-        <div className="project-card">
+        <div className="project-card mb-20">
           <a href="https://dignitas.gg/" target="_blank" rel="noreferrer">
             <h1 className="text-center m-2 text-xl">Dignitas</h1>
             <ul>
