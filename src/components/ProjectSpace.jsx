@@ -11,7 +11,7 @@ let secondProjectRepoURL = "https://github.com/neft-tk/Code-Conflict";
 let secondProjectDeployedURL = "https://code-conflict.herokuapp.com/";
 let secondProjectDescription = "Small single player game utilizing express routes with a small in-site back-end for user and game data."
 
-let thirdProjectName = "CCPB Violin Studio";
+let thirdProjectName = "CCPB Violin Studio - In Progress Client Work";
 let thirdProjectRepoURL = "https://github.com/neft-tk/ccpb-violin-studio";
 let thirdProjectDeployedURl = "#";
 let thirdProjectDescription = "Client Work: Website for hosting violin student notes that are posted by an admin and available for just the student (and admins) to see."
