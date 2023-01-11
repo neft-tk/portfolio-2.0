@@ -19,6 +19,7 @@ let thirdProjectDescription = "Client Work: Website for hosting violin student n
 export default function ProjectSpace() {
   return (
     <>
+        <h1 className="text-center text-xl mt-4">Recent Projects</h1>
       <div className="flex flex-col justify-evenly md:flex-row">
         <Project
           projectName={firstProjectName}
