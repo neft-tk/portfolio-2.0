@@ -4,7 +4,7 @@ import Nav from "./components/Nav";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./components/About";
 import Footer from "./components/Footer";
-import History from "./components/pages/History";
+import History from "./components/History";
 import Education from "./components/pages/Education";
 import Work from "./components/pages/Work";
 import Contact from "./components/pages/Contact";
