@@ -7,7 +7,7 @@ import IBLogo from "../../assets/images/IBLogo.png";
 export default function Education() {
   return (
     <>
-      <div className="block flex flex-col my-60 items-center justify-evenly lg:mx-12 lg:my-32">
+      <div className="block flex flex-col my-24 items-center justify-evenly lg:mx-12 lg:my-32">
           <h1>Education</h1>
         <div className="flex flex-col md:flex-row">
           <div className="education-card">
@@ -31,7 +31,7 @@ export default function Education() {
           </div>
           <div className="education-card">
             <img src={UWLogo} alt="University of Washington logo" className="school-icon mx-2"/>
-            <a href="https://bootcamp.uw.edu/" target="_blank" rel="noreferrer">University of Washington Fullstack Web Development Bootcamp
+            <a href="https://bootcamp.uw.edu/" target="_blank" rel="noreferrer">University of Washington: Fullstack Web Development Bootcamp
             </a>
           </div>
         </div>

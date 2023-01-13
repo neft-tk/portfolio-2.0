@@ -14,7 +14,7 @@ export default function About() {
   return (
     <>
       <div className="block">
-        <div className="flex flex-col mt-60 justify-evenly items-center md:flex-row lg:mx-12 lg:mt-20">
+        <div className="flex flex-col mt-20 justify-evenly items-center md:flex-row lg:mx-12 lg:mt-20">
           <div className="m-4">
             <img src={Image} alt="selfie" className="selfie" />
           </div>
