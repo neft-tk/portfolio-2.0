@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "../../assets/Erik Buss Resume.docx.pdf";
+import resume from "../../assets/Erik Buss Resume.pdf";
 
 export default function Work() {
   return (
