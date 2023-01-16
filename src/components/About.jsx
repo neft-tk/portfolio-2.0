@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectSpace from "./ProjectSpace";
-import Image from "../assets/images/60019224.jpg";
+import Image from "../assets/images/selfie.jpg";
 import javascript from "../assets/images/tech-logos/javascript-original.svg";
 import reactlogo from "../assets/images/tech-logos/reactlogo.png";
 import sqllogo from "../assets/images/tech-logos/sqllogo.png";
@@ -27,6 +27,8 @@ export default function About() {
               with a growth mindset - my goal is learning-focused, so that
               everyday I can be at least 1% better at anything I put my mind to.{" "}
             </p>
+            <p>I thrive in a communicative, healthy environment where self and team improvement is one of the main goals. While I enjoy playing to my strengths, I never pass up the opportunity to work on an area I'm weaker in.</p>
+            <p>I like making magic happen in any position I work in. I'm a competitor and love to break/set records. My biggest sell is my ability to grow my relative skills, however low on the skill totem pole I may be, climbing it efficiencly and safely is where I am most at home.</p>
           </div>
         </div>
         <div className="flex flex-col items-center md:flex-row lg:justify-around">
