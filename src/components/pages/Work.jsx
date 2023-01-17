@@ -20,7 +20,7 @@ export default function Work() {
         <div className="project-card">
           <a href="https://www.pagliacci.com/" target="_blank" rel="noreferrer">
             <h1 className="text-center m-2 text-xl">Pagliacci Pizza</h1>
-            <h2 className="underline">Delivery Driver Manager</h2>
+            <h2 className="underline">Management</h2>
             <ul>
               <li>
                 Managed workers’ schedules, training, and performance reviews
