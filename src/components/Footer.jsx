@@ -11,7 +11,7 @@ export default function Footer() {
           <a href="https://github.com/neft-tk" target="blank">
             <img src={Github} alt="github" className="icon" />
           </a>
-          <a href="www.linkedin.com/in/john-erik-buss" target="blank">
+          <a href="https://www.linkedin.com/in/john-erik-buss" target="blank">
             <img src={Linkedin} alt="linkedin" className="icon" />
           </a>
         </div>
