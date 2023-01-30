@@ -1,16 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import menu from "../assets/images/menu.svg";
+import resume from "../assets/Erik Buss Resume.pdf"
 
 export default function Nav() {
   return (
     <nav class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
       <div class="container flex flex-row items-center justify-between mx-auto">
         <a href="/" class="flex items-center">
-          <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+          <span className="text-m self-center md:text-xl font-semibold whitespace-nowrap dark:text-white">
             Erik Buss - Driven By Growth
           </span>
         </a>
+        <button
+            type="button"
+            className="text-m focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg px-2 py-1.5 md:px-5 md:py-2 mr-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
+          >
+            <a href={resume} download>
+              Resume
+            </a>
+          </button>
         <div
           class="hidden items-center justify-between w-full md:flex md:w-auto md:order-1"
           id="navbar-sticky"
@@ -19,7 +28,7 @@ export default function Nav() {
             <li>
               <Link to="/">
                 <h1
-                  className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                  className="text-xl block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
                   aria-current="page"
                 >
                   Home
@@ -29,7 +38,7 @@ export default function Nav() {
             <li>
               <a
                 href="/education"
-                className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="text-xl block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Education
               </a>
@@ -37,7 +46,7 @@ export default function Nav() {
             <li>
               <a
                 href="/work"
-                className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="text-xl block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Work Experience
               </a>
@@ -45,7 +54,7 @@ export default function Nav() {
             <li>
               <a
                 href="/contact"
-                className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="text-xl block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Contact Me
               </a>
