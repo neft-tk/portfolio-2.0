@@ -19,7 +19,6 @@ export default function History() {
   return (
     <>
       <div className="activity-widget">
-        <h1 className="underline">GitHub Recent Activity</h1>
         <div>
         {pushes.map((push, i) => (
           <div className="activity" key={i}>
