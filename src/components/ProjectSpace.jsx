@@ -13,8 +13,8 @@ let secondProjectDescription = "Small single player game utilizing express route
 
 let thirdProjectName = "CCPB Violin Studio - In Progress Client Work";
 let thirdProjectRepoURL = "https://github.com/neft-tk/ccpb-violin-studio";
-let thirdProjectDeployedURl = "#";
-let thirdProjectDescription = "Client Work: Website for hosting violin student notes that are posted by an admin and available for just the student (and admins) to see."
+let thirdProjectDeployedURl = "https://bussviolinstudio.com/";
+let thirdProjectDescription = "IN PROGRESS Client Work: Website for hosting violin student notes that are posted by an admin and available for just the student (and admins) to see. Waiting on client feedback for design ideas."
 
 export default function ProjectSpace() {
   return (
