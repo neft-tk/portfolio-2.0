@@ -6,10 +6,10 @@ let firstProjectRepoURL = "https://github.com/neft-tk/fatal-forge";
 let firstProjectDeployedURL = "https://gridlocke.net/";
 let firstProjectDescription = "Multiplayer card game with a custom deckbuilder. Utilizes a deployed back-end server for user and card data."
 
-let secondProjectName = "Code-Conflict";
-let secondProjectRepoURL = "https://github.com/neft-tk/Code-Conflict";
-let secondProjectDeployedURL = "https://code-conflict.herokuapp.com/";
-let secondProjectDescription = "Small single player game utilizing express routes with a small in-site back-end for user and game data."
+let secondProjectName = "DJ Divide";
+let secondProjectRepoURL = "https://github.com/neft-tk/djdivide";
+let secondProjectDeployedURL = "https://djdivide.com/";
+let secondProjectDescription = "Client Work: Front end page for local musician. Features an emailJS form that emails the client from the front end."
 
 let thirdProjectName = "CCPB Violin Studio - In Progress Client Work";
 let thirdProjectRepoURL = "https://github.com/neft-tk/ccpb-violin-studio";

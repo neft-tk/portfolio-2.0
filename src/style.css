@@ -21,7 +21,7 @@
     }
 
     .footer {
-        @apply absolute md:fixed inset-x-1/2 md:bottom-5 items-center flex flex-row justify-center;
+        @apply p-5 inset-x-1/2 items-center flex flex-row justify-center md:bottom-5;
     }
     
     .education-card {
@@ -174,7 +174,7 @@ li {
 }
 
 .logo-card {
-    background-color: rgb(211, 208, 208);
+    /* background-color: rgb(211, 208, 208); */
     width: fit-content;
     border-radius: 5px;
     align-items: center;
